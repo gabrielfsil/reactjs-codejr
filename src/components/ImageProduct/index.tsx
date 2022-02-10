@@ -1,3 +1,4 @@
+import { Image } from "@chakra-ui/react";
 import React from "react"
 
 
@@ -7,5 +8,5 @@ interface ImageProductProps{
 }
 
 export function ImageProduct(props: ImageProductProps) {
-  return <img className="image-product" src={props.image} alt={props.title} />;
+  return <Image height="100%" objectFit="cover"  src={props.image} alt={props.title} />;
 }
